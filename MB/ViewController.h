@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)btnReto:(id)sender;
+
 
 @end
 

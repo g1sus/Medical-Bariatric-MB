@@ -24,4 +24,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btnReto:(id)sender {
+    [self performSegueWithIdentifier:@"Reto" sender:self];
+}
 @end
