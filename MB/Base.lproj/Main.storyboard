@@ -50,7 +50,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1901.5" y="172.5"/>
+            <point key="canvasLocation" x="-1919.5" y="124.5"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="KtF-go-hPW">
@@ -90,7 +90,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTT-dt-1Vo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-642.5" y="779.5"/>
+            <point key="canvasLocation" x="-932.5" y="611.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HTt-jq-5O1">
@@ -107,7 +107,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ill-X6-3O0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-115.5" y="787.5"/>
+            <point key="canvasLocation" x="410.5" y="611.5"/>
         </scene>
         <!--Mis Dietas-->
         <scene sceneID="fvo-HQ-084">
@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MZ3-ip-dmO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-115.5" y="1756.5"/>
+            <point key="canvasLocation" x="410.5" y="1430.5"/>
         </scene>
         <!--Perfil-->
         <scene sceneID="6Zc-uH-2RB">
@@ -258,7 +258,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcU-mz-7a6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-642.5" y="1747.5"/>
+            <point key="canvasLocation" x="-932.5" y="1423.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Xig-kk-YGd">
@@ -331,7 +331,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLV-5q-jkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-642.5" y="2515.5"/>
+            <point key="canvasLocation" x="-698.5" y="2205.5"/>
         </scene>
         <!--Inicia Sesión-->
         <scene sceneID="zm1-LP-nep">
@@ -388,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJd-nm-9Py" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="973.5" y="1756.5"/>
+            <point key="canvasLocation" x="-494.5" y="1423.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nKN-f3-dNu">
@@ -405,7 +405,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6i-6g-aVb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407.5" y="787.5"/>
+            <point key="canvasLocation" x="881.5" y="611.5"/>
         </scene>
         <!--Agendar Cita-->
         <scene sceneID="OSJ-bz-00R">
@@ -475,7 +475,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYS-6h-KR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="407.5" y="1756.5"/>
+            <point key="canvasLocation" x="881.5" y="1430.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q7g-y9-FaP">
@@ -492,7 +492,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HLj-4h-Cpt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1507.5" y="779.5"/>
+            <point key="canvasLocation" x="1359.5" y="611.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="z8a-Le-3Pw">
@@ -509,7 +509,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kcQ-xL-3Dc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2002.5" y="779.5"/>
+            <point key="canvasLocation" x="-45.5" y="611.5"/>
         </scene>
         <!--Contacto-->
         <scene sceneID="1ng-t2-d48">
@@ -592,7 +592,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wu2-FW-wUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1513.5" y="1756.5"/>
+            <point key="canvasLocation" x="1359.5" y="1430.5"/>
         </scene>
         <!--Historial-->
         <scene sceneID="jmc-8D-Jgd">
@@ -602,11 +602,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fondo.jpg" id="OgI-Jd-Ago">
+                            <rect key="frame" x="0.0" y="130" width="375" height="538"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="YXO-5X-rY6">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YXO-5X-rY6" id="Fwe-bc-RU2">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjY-7Z-UxB">
+                                            <rect key="frame" x="17" y="11" width="50" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Peso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DeX-o4-LT1">
+                                            <rect key="frame" x="75" y="11" width="55" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="kg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzT-vi-LZg">
+                                            <rect key="frame" x="131" y="12" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IMC:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDT-7Q-b6X">
+                                            <rect key="frame" x="213" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="imc" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuJ-e0-UAl">
+                                            <rect key="frame" x="263" y="12" width="57" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -615,7 +651,7 @@
                             <outlet property="delegate" destination="kdK-Gg-QLl" id="P8d-hh-07n"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="0dz-Tt-bGa">
+                    <navigationItem key="navigationItem" title="Historial" id="0dz-Tt-bGa">
                         <barButtonItem key="leftBarButtonItem" image="menuitem.png" id="NHy-Zi-S8N">
                             <color key="tintColor" red="0.15686274510000001" green="0.68627450980000004" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
@@ -627,7 +663,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xBd-BB-3r5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2002.5" y="1766.5"/>
+            <point key="canvasLocation" x="-45.5" y="1430.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fLf-eN-l6j">
@@ -644,7 +680,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OM5-d1-AIK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="973.5" y="779.5"/>
+            <point key="canvasLocation" x="-494.5" y="611.5"/>
         </scene>
         <!--Menu-->
         <scene sceneID="bD4-f1-bsI">
@@ -696,6 +732,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="5Kd-NO-Idi" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="5oi-5q-Zk0"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Perfil" rowHeight="50" id="3Uh-Gj-r1b">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -734,7 +773,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ggQ-1t-YSX" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Sae-LX-gDo"/>
+                                    <segue destination="ggQ-1t-YSX" kind="custom" identifier="sw_historial" customClass="SWRevealViewControllerSeguePushController" id="Sae-LX-gDo"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Dieta" rowHeight="50" id="QpW-mQ-IaV">
@@ -808,59 +847,76 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z8O-7R-u92" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-642.5" y="-754.5"/>
+            <point key="canvasLocation" x="-932.5" y="-401.5"/>
         </scene>
-        <!--Medical Bariatric -->
-        <scene sceneID="pQS-Vr-WkO">
+        <!--Navigation Controller-->
+        <scene sceneID="QfI-2z-Ocu">
             <objects>
-                <viewController id="WR5-Lb-KqW" customClass="Conoce" sceneMemberID="viewController">
+                <navigationController id="5Kd-NO-Idi" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5LH-vD-H5A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="398-ZG-0Rd" kind="relationship" relationship="rootViewController" id="jMg-NL-evO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUK-Md-rDc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-303.5" y="-401.5"/>
+        </scene>
+        <!--Medical Bariatric-->
+        <scene sceneID="EzT-ck-BHO">
+            <objects>
+                <viewController id="398-ZG-0Rd" customClass="ConoceDra" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nAE-SK-a9L"/>
-                        <viewControllerLayoutGuide type="bottom" id="xQF-Sj-Z1F"/>
+                        <viewControllerLayoutGuide type="top" id="Tb4-Mm-vh4"/>
+                        <viewControllerLayoutGuide type="bottom" id="V4c-Ve-HNZ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wGg-cr-4zr">
+                    <view key="view" contentMode="scaleToFill" id="zWD-RW-Cqa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fondo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iPh-SE-Oni">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fondo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NUZ-Qb-PdO">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dra. Claudia Santiago Jarquin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xm-fg-Sh6">
-                                <rect key="frame" x="7" y="28" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <rect key="frame" x="16" y="72" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medico Cirujano General " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAq-7Z-jhN">
-                                <rect key="frame" x="16" y="72" width="343" height="21"/>
+                                <rect key="frame" x="16" y="101" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Postgrado en Bariatria Clinica y Nutrición " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSX-ob-7UU">
-                                <rect key="frame" x="16" y="101" width="343" height="21"/>
+                                <rect key="frame" x="16" y="125" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ced. Prof. 4389762-CE 7892347" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sa-Vt-1M1">
-                                <rect key="frame" x="16" y="130" width="343" height="21"/>
+                                <rect key="frame" x="16" y="145" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dra.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Gk-zK-VkV">
-                                <rect key="frame" x="67" y="177" width="240" height="189"/>
+                                <rect key="frame" x="62" y="174" width="240" height="189"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZD-s8-EcY">
-                                <rect key="frame" x="16" y="374" width="343" height="165"/>
+                                <rect key="frame" x="16" y="355" width="343" height="165"/>
                                 <string key="text">La Dra. Claudia Santiago Jarquin es egresada de la URSE en la carrera de Médico Cirujano, con un Postgrado en Bariatria Clinica y Nutricion avalda por el Instituto Politécnico Nacional y el Instituto Brasileiro de Enseñanza en Salud.</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ct-pb-s4z">
-                                <rect key="frame" x="16" y="513" width="343" height="123"/>
+                                <rect key="frame" x="16" y="507" width="343" height="123"/>
                                 <string key="text">Se dedica a la práctica privada de su profesion y especialidad desde 2012; en donde ayuda a pacientes con problemas de sobrepeso y obesidad mediante el Control Cientifico de Peso con ayuda de los tratamientos más avanzados en el campo de la Nutrición, Bariatria y Obesidad.</string>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -869,19 +925,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Medical Bariatric " id="Ddq-uW-8Yc">
-                        <barButtonItem key="leftBarButtonItem" image="menuitem.png" style="plain" id="N5Q-DA-42s">
+                    <navigationItem key="navigationItem" title="Medical Bariatric" id="dNh-zw-PsY">
+                        <barButtonItem key="leftBarButtonItem" image="menuitem.png" style="plain" id="EAj-10-ETZ">
                             <color key="tintColor" red="0.15686274510000001" green="0.68627450980000004" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="btnMenu" destination="N5Q-DA-42s" id="qVQ-wD-zQb"/>
+                        <outlet property="btnMenu" destination="EAj-10-ETZ" id="Rds-lh-xdq"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xhp-qA-zus" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mvU-qk-SJ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="777.5" y="-754.5"/>
+            <point key="canvasLocation" x="177.5" y="-401.5"/>
         </scene>
     </scenes>
     <resources>

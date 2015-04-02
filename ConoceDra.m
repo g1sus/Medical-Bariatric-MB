@@ -1,28 +1,23 @@
 //
-//  Conoce.m
+//  ConoceDra.m
 //  MB
 //
-//  Created by Jesus Antonio Hernandez Mendez on 01/04/15.
+//  Created by Jesus Antonio Hernandez Mendez on 02/04/15.
 //  Copyright (c) 2015 BTICs. All rights reserved.
 //
 
-#import "Conoce.h"
+#import "ConoceDra.h"
 #import "SWRevealViewController.h"
 
-@interface Conoce ()
+@interface ConoceDra ()
 
 @end
 
-@implementation Conoce
+@implementation ConoceDra
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
     SWRevealViewController *revealViewController = self.revealViewController;
     if ( revealViewController )
     {
@@ -30,6 +25,12 @@
         [self.btnMenu setAction: @selector( revealToggle: )];
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
+
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 /*
