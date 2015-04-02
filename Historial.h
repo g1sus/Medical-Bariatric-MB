@@ -2,13 +2,13 @@
 //  Historial.h
 //  MB
 //
-//  Created by Jesus Antonio Hernandez Mendez on 01/04/15.
+//  Created by Jesus Antonio Hernandez Mendez on 02/04/15.
 //  Copyright (c) 2015 BTICs. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 @interface Historial : UITableViewController
-@property (strong, nonatomic) IBOutlet UIBarButtonItem *btnMenu;
 
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *btnMenu;
 @end
