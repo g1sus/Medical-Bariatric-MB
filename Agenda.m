@@ -7,6 +7,7 @@
 //
 
 #import "Agenda.h"
+#import "SWRevealViewController.h"
 
 @interface Agenda ()
 
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    SWRevealViewController *revealViewController = self.revealViewController;
+    if ( revealViewController )
+    {
+        [self.btnMenu setTarget: self.revealViewController];
+        [self.btnMenu setAction: @selector( revealToggle: )];
+        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

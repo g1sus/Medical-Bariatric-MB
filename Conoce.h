@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Conoce : UIViewController
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *btnMenu;
 
 @end

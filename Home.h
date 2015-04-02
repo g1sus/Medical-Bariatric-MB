@@ -10,7 +10,6 @@
 
 @interface Home : UIViewController
 
-//Outlet
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *btnMenu;
 
 @end

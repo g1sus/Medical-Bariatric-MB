@@ -10,4 +10,5 @@
 
 @interface Dieta : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *btnMenu;
 @end

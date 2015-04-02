@@ -7,6 +7,7 @@
 //
 
 #import "Menu.h"
+#import "SWRevealViewController.h"
 
 @interface Menu ()
 

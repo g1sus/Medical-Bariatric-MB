@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Historial : UITableViewController
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *btnMenu;
 
 @end

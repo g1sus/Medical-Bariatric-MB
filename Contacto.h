@@ -10,4 +10,7 @@
 
 @interface Contacto : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *btnMenu;
+
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "Conoce.h"
+#import "SWRevealViewController.h"
 
 @interface Conoce ()
 
@@ -22,6 +23,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    SWRevealViewController *revealViewController = self.revealViewController;
+    if ( revealViewController )
+    {
+        [self.btnMenu setTarget: self.revealViewController];
+        [self.btnMenu setAction: @selector( revealToggle: )];
+        [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    }
 }
 
 /*
