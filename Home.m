@@ -45,4 +45,7 @@
 }
 */
 
+- (IBAction)btnEdit:(id)sender {
+    [self performSegueWithIdentifier:@"sw_Edit" sender:self];
+}
 @end

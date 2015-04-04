@@ -255,21 +255,42 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="Edit.png" id="Pdv-vw-ioM">
                             <color key="tintColor" red="0.15686274509803921" green="0.68627450980392157" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="btnEdit:" destination="HTG-aZ-7Va" id="p27-La-UGP"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="btnMenu" destination="xLk-kf-J6i" id="MjD-Gg-McU"/>
+                        <segue destination="UMa-zZ-UQT" kind="modal" identifier="sw_Edit" id="mAI-cw-M6w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xcU-mz-7a6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-932.5" y="1423.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="9DO-zS-MfH">
+            <objects>
+                <navigationController id="UMa-zZ-UQT" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JgQ-sQ-A22">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="idD-IO-3Ed" kind="relationship" relationship="rootViewController" id="Lft-4T-CVX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g45-nS-ECn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-932.5" y="2199.5"/>
+        </scene>
+        <!--Edit Perfil-->
         <scene sceneID="Xig-kk-YGd">
             <objects>
-                <viewController id="idD-IO-3Ed" sceneMemberID="viewController">
+                <viewController id="idD-IO-3Ed" customClass="EditPerfil" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RZ7-g8-YRw"/>
                         <viewControllerLayoutGuide type="bottom" id="W1l-Uw-by9"/>
@@ -278,66 +299,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fondo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8nB-d6-zKj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Fondo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sU9-pb-n3E">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qte-av-d73">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Editar Perfil" id="LN5-iZ-sfW">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="DgA-gd-wEg">
-                                            <color key="tintColor" red="0.15686274510000001" green="0.68627450980000004" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPY-Wf-5tF">
-                                <rect key="frame" x="112" y="56" width="150" height="150"/>
-                                <state key="normal" title="Button" image="camara.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AID-ZJ-PHv">
-                                <rect key="frame" x="16" y="583" width="343" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
-                                <state key="normal" title="Guardar">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bcb-1C-UHX">
-                                <rect key="frame" x="77" y="250" width="220" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha de Nacimiento" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B24-IR-ZA0">
-                                <rect key="frame" x="77" y="310" width="220" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Peso" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2N6-30-J9p">
-                                <rect key="frame" x="77" y="370" width="220" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estatura" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUQ-hg-jEw">
-                                <rect key="frame" x="77" y="430" width="220" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Movil" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VF3-Q7-lXN">
-                                <rect key="frame" x="77" y="490" width="220" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="4kD-Yl-i6G">
+                                <rect key="frame" x="-6" y="72" width="387" height="595"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre y Apellido" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bcb-1C-UHX">
+                                        <rect key="frame" x="83" y="150" width="220" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="yes" returnKeyType="done"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha de Nacimiento" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B24-IR-ZA0">
+                                        <rect key="frame" x="83" y="200" width="220" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Peso                          KG" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2N6-30-J9p">
+                                        <rect key="frame" x="83" y="250" width="220" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estatura                     CM" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUQ-hg-jEw">
+                                        <rect key="frame" x="83" y="300" width="220" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Movil" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VF3-Q7-lXN">
+                                        <rect key="frame" x="83" y="350" width="220" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="e-mail" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2h2-3U-B4n">
+                                        <rect key="frame" x="83" y="400" width="220" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPY-Wf-5tF" userLabel="btnFoto">
+                                        <rect key="frame" x="118" y="0.0" width="150" height="150"/>
+                                        <state key="normal" title="Button" image="camara.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnFoto:" destination="idD-IO-3Ed" eventType="touchUpInside" id="vC8-Dv-djS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AID-ZJ-PHv">
+                                        <rect key="frame" x="22" y="473" width="343" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                        <state key="normal" title="Guardar">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnGuardar:" destination="idD-IO-3Ed" eventType="touchUpInside" id="bvN-94-h9a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Vm1-vX-FRN">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="stop" id="EIc-6Q-Gaa">
+                            <connections>
+                                <action selector="btnBack:" destination="idD-IO-3Ed" id="byn-6q-GRL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="txtEstatura" destination="hUQ-hg-jEw" id="u8S-Tc-tms"/>
+                        <outlet property="txtFechaNac" destination="B24-IR-ZA0" id="cxI-ot-0Gn"/>
+                        <outlet property="txtMail" destination="2h2-3U-B4n" id="mN5-j7-N9Y"/>
+                        <outlet property="txtMovil" destination="VF3-Q7-lXN" id="Aoi-AE-uXp"/>
+                        <outlet property="txtNombre" destination="Bcb-1C-UHX" id="RtX-bP-shd"/>
+                        <outlet property="txtPeso" destination="2N6-30-J9p" id="HTH-Xr-1ld"/>
+                        <segue destination="XQ6-tr-yjd" kind="modal" identifier="EditToMenu" id="P4A-by-r0F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLV-5q-jkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-698.5" y="2205.5"/>
+            <point key="canvasLocation" x="-494.5" y="2199.5"/>
         </scene>
         <!--Inicia Sesión-->
         <scene sceneID="zm1-LP-nep">
@@ -967,6 +1010,7 @@
         <image name="web.png" width="118" height="118"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="P4A-by-r0F"/>
         <segue reference="DTa-oa-5DR"/>
     </inferredMetricsTieBreakers>
 </document>
