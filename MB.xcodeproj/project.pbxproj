@@ -72,6 +72,8 @@
 		64E6663A1ACD0B9500452C66 /* Dieta.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E666391ACD0B9500452C66 /* Dieta.m */; };
 		64E6663D1ACD0BA800452C66 /* Agenda.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E6663C1ACD0BA800452C66 /* Agenda.m */; };
 		64E666401ACD0BCB00452C66 /* Contacto.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E6663F1ACD0BCB00452C66 /* Contacto.m */; };
+		64FCF7FD1AD0C80B00B73F17 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64FCF7101AD0C80A00B73F17 /* FBSDKCoreKit.framework */; };
+		64FCF7FE1AD0C80B00B73F17 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64FCF7111AD0C80A00B73F17 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -166,6 +168,8 @@
 		64E6663C1ACD0BA800452C66 /* Agenda.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Agenda.m; sourceTree = "<group>"; };
 		64E6663E1ACD0BCB00452C66 /* Contacto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contacto.h; sourceTree = "<group>"; };
 		64E6663F1ACD0BCB00452C66 /* Contacto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contacto.m; sourceTree = "<group>"; };
+		64FCF7101AD0C80A00B73F17 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = FB/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		64FCF7111AD0C80A00B73F17 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FB/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,10 +182,12 @@
 				643A1FCA1ACDDB990008ACBF /* SystemConfiguration.framework in Frameworks */,
 				643A1FC81ACDDB8E0008ACBF /* StoreKit.framework in Frameworks */,
 				643A1FC61ACDDB840008ACBF /* Security.framework in Frameworks */,
+				64FCF7FD1AD0C80B00B73F17 /* FBSDKCoreKit.framework in Frameworks */,
 				643A1FC41ACDDB7B0008ACBF /* QuartzCore.framework in Frameworks */,
 				643A1FC21ACDDB700008ACBF /* MobileCoreServices.framework in Frameworks */,
 				643A1FC01ACDDB660008ACBF /* CoreLocation.framework in Frameworks */,
 				643A1FBE1ACDDB590008ACBF /* CoreGraphics.framework in Frameworks */,
+				64FCF7FE1AD0C80B00B73F17 /* FBSDKLoginKit.framework in Frameworks */,
 				643A1FBC1ACDDB510008ACBF /* CFNetwork.framework in Frameworks */,
 				643A1FBA1ACDDB470008ACBF /* AudioToolbox.framework in Frameworks */,
 				643A1FB81ACDD4C70008ACBF /* ParseUI.framework in Frameworks */,
@@ -278,6 +284,7 @@
 		643A1F4D1ACDCE8D0008ACBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				64FCF8981AD0CDA800B73F17 /* FB */,
 				643A1FCD1ACDDBB30008ACBF /* libsqlite3.dylib */,
 				643A1FCB1ACDDBA70008ACBF /* libz.dylib */,
 				643A1FC91ACDDB990008ACBF /* SystemConfiguration.framework */,
@@ -433,6 +440,15 @@
 			);
 			name = Sesion;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		64FCF8981AD0CDA800B73F17 /* FB */ = {
+			isa = PBXGroup;
+			children = (
+				64FCF7101AD0C80A00B73F17 /* FBSDKCoreKit.framework */,
+				64FCF7111AD0C80A00B73F17 /* FBSDKLoginKit.framework */,
+			);
+			name = FB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -707,6 +723,7 @@
 					"$(PROJECT_DIR)/Frameworks/parse-library-1.7.1",
 					"$(PROJECT_DIR)/Frameworks/parse-starter-project-1.7.1/ParseStarterProject",
 					"$(PROJECT_DIR)/Frameworks/parse-starter-project-1.7.1/ParseSwiftStarterProject",
+					"$(PROJECT_DIR)/Frameworks/FB/FacebookSDK",
 				);
 				INFOPLIST_FILE = MB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -725,6 +742,7 @@
 					"$(PROJECT_DIR)/Frameworks/parse-library-1.7.1",
 					"$(PROJECT_DIR)/Frameworks/parse-starter-project-1.7.1/ParseStarterProject",
 					"$(PROJECT_DIR)/Frameworks/parse-starter-project-1.7.1/ParseSwiftStarterProject",
+					"$(PROJECT_DIR)/Frameworks/FB/FacebookSDK",
 				);
 				INFOPLIST_FILE = MB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
