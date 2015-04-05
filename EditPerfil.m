@@ -9,6 +9,8 @@
 #import "EditPerfil.h"
 #import <Parse/Parse.h>
 
+UIImage *chosenImage;
+
 @interface EditPerfil ()
 
 @end
@@ -65,6 +67,7 @@
         NSNumber *Estatura = [f numberFromString:self.txtEstatura.text];
         
         float IMC = 10000 * (Peso.floatValue / (Estatura.floatValue * Estatura.floatValue));
+        float PesoI = (0.75 * (Estatura.floatValue - 150))+50;
         
         
         PFObject *objTemp = [PFObject objectWithClassName:@"MedicalBariatric"];
@@ -75,6 +78,11 @@
         objTemp[@"IMC"] = [NSNumber numberWithFloat:IMC];
         objTemp[@"Movil"] = self.txtMovil.text;
         objTemp[@"Mail"] = self.txtMail.text;
+        objTemp[@"PesoIdeal"] = [NSNumber numberWithFloat:PesoI];
+        
+        NSData *imageData = UIImagePNGRepresentation(chosenImage);
+        PFFile *imageFile = [PFFile fileWithName:@"imageMB.png" data:imageData];
+        objTemp[@"imgPicture"] = imageFile;
         
         
         
@@ -86,6 +94,7 @@
             self.txtEstatura.text = nil;
             self.txtMovil.text = nil;
             self.txtMail.text = nil;
+            self.imgPicture = nil;
         }
         else
         {
@@ -98,6 +107,44 @@
         
     }
 
+}
+
+- (IBAction)btnCamara:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Fotografia"
+                                                    message:@"Elegir fotografía de"
+                                                   delegate:self
+                                          cancelButtonTitle:@"Cancelar"
+                                          otherButtonTitles:@"Camara", @"Carrete", nil];
+    [alert show];
+    
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.allowsEditing = YES;
+    if(buttonIndex == 0)
+    {
+        NSLog(@"Cancelar");
+    }
+    else if(buttonIndex == 1)
+    {
+        NSLog(@"Camara");
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    }
+    else if(buttonIndex == 2)
+    {
+        NSLog(@"Carrete");
+        picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
+    [self presentViewController:picker animated:YES completion:NULL];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    chosenImage = info[UIImagePickerControllerEditedImage];
+    self.imgPicture.image = chosenImage;
+    [picker dismissViewControllerAnimated:YES completion:NULL];
 }
 
 @end

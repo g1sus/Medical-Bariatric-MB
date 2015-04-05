@@ -67,13 +67,13 @@
 		64E666281ACCEC6200452C66 /* phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 64E666261ACCEC6200452C66 /* phone.png */; };
 		64E6662A1ACCEDF300452C66 /* web.png in Resources */ = {isa = PBXBuildFile; fileRef = 64E666291ACCEDF300452C66 /* web.png */; };
 		64E6662C1ACCF03F00452C66 /* mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = 64E6662B1ACCF03F00452C66 /* mapa.png */; };
-		64E6662E1ACD036700452C66 /* camara.png in Resources */ = {isa = PBXBuildFile; fileRef = 64E6662D1ACD036700452C66 /* camara.png */; };
 		64E666311ACD0AD300452C66 /* Sesion.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E666301ACD0AD300452C66 /* Sesion.m */; };
 		64E6663A1ACD0B9500452C66 /* Dieta.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E666391ACD0B9500452C66 /* Dieta.m */; };
 		64E6663D1ACD0BA800452C66 /* Agenda.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E6663C1ACD0BA800452C66 /* Agenda.m */; };
 		64E666401ACD0BCB00452C66 /* Contacto.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E6663F1ACD0BCB00452C66 /* Contacto.m */; };
 		64FCF7FD1AD0C80B00B73F17 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64FCF7101AD0C80A00B73F17 /* FBSDKCoreKit.framework */; };
 		64FCF7FE1AD0C80B00B73F17 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64FCF7111AD0C80A00B73F17 /* FBSDKLoginKit.framework */; };
+		64FCF89A1AD0EB8C00B73F17 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 64FCF8991AD0EB8C00B73F17 /* avatar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,7 +159,6 @@
 		64E666261ACCEC6200452C66 /* phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = phone.png; sourceTree = "<group>"; };
 		64E666291ACCEDF300452C66 /* web.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web.png; sourceTree = "<group>"; };
 		64E6662B1ACCF03F00452C66 /* mapa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapa.png; sourceTree = "<group>"; };
-		64E6662D1ACD036700452C66 /* camara.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camara.png; sourceTree = "<group>"; };
 		64E6662F1ACD0AD300452C66 /* Sesion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sesion.h; sourceTree = "<group>"; };
 		64E666301ACD0AD300452C66 /* Sesion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sesion.m; sourceTree = "<group>"; };
 		64E666381ACD0B9500452C66 /* Dieta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dieta.h; sourceTree = "<group>"; };
@@ -170,6 +169,7 @@
 		64E6663F1ACD0BCB00452C66 /* Contacto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contacto.m; sourceTree = "<group>"; };
 		64FCF7101AD0C80A00B73F17 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = FB/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		64FCF7111AD0C80A00B73F17 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FB/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		64FCF8991AD0EB8C00B73F17 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,9 +389,9 @@
 		645D47B31ACB70FF0069F0C1 /* Imgs */ = {
 			isa = PBXGroup;
 			children = (
+				64FCF8991AD0EB8C00B73F17 /* avatar.png */,
 				6493F3351ACD8C3000A975A2 /* LauchMB.png */,
 				6493F3361ACD8C3000A975A2 /* LogoMB.jpg */,
-				64E6662D1ACD036700452C66 /* camara.png */,
 				64E6662B1ACCF03F00452C66 /* mapa.png */,
 				64E666291ACCEDF300452C66 /* web.png */,
 				64E666251ACCEC6200452C66 /* mail.png */,
@@ -536,7 +536,6 @@
 				645D47E11ACBB4A50069F0C1 /* wallpaper.jpg in Resources */,
 				64E6661E1ACC56AD00452C66 /* contact_icon.png in Resources */,
 				645D47BF1ACB83D90069F0C1 /* MB3.jpg in Resources */,
-				64E6662E1ACD036700452C66 /* camara.png in Resources */,
 				645D47991ACB6F650069F0C1 /* Main.storyboard in Resources */,
 				645D47CF1ACB8D640069F0C1 /* MB2.jpg in Resources */,
 				64E666201ACC7CA100452C66 /* Edit.png in Resources */,
@@ -554,6 +553,7 @@
 				645D47D11ACB8D640069F0C1 /* MB6.jpg in Resources */,
 				645D47E51ACBC0370069F0C1 /* Dra.png in Resources */,
 				645D47BD1ACB81850069F0C1 /* MB4.png in Resources */,
+				64FCF89A1AD0EB8C00B73F17 /* avatar.png in Resources */,
 				645D47B51ACB70FF0069F0C1 /* MB1.jpg in Resources */,
 				645D47D31ACB8D640069F0C1 /* MB8.jpg in Resources */,
 				645D47DF1ACBAFD50069F0C1 /* dieta.jpg in Resources */,

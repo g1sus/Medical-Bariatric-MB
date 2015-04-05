@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface EditPerfil : UIViewController
+//Outlet
+@property (strong, nonatomic) IBOutlet UIImageView *imgPicture;
 
 //Action
 - (IBAction)btnBack:(id)sender;
-- (IBAction)btnFoto:(id)sender;
 - (IBAction)btnGuardar:(id)sender;
+- (IBAction)btnCamara:(id)sender;
 
 //TextFields
 @property (strong, nonatomic) IBOutlet UITextField *txtNombre;
