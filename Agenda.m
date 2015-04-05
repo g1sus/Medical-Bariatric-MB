@@ -8,6 +8,9 @@
 
 #import "Agenda.h"
 #import "SWRevealViewController.h"
+#import <Parse/Parse.h>
+
+UIAlertView *alert;
 
 @interface Agenda ()
 
@@ -42,4 +45,45 @@
 }
 */
 
+
+//boton enviar
+- (IBAction)btnSave:(id)sender {
+    //Agregar datos en parse desde Editar Perfil
+    
+    if ([self.txtDia.text isEqualToString:@""] || [self.txtHora.text isEqualToString:@""] || [self.txtMsj.text isEqualToString:@""])
+    {
+        
+        NSLog(@"Campos Obligatorios");
+        
+    }else{
+        //Formateador para crear numeros desde un NSString
+        NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+        f.numberStyle = NSNumberFormatterDecimalStyle;
+        
+        
+        PFObject *objTemp = [PFObject objectWithClassName:@"MedicalBariatric"];
+        objTemp[@"Dia"] = self.txtDia.text;
+        objTemp[@"Hora"] = self.txtHora.text;
+        objTemp[@"Mensaje"] = self.txtMsj.text;
+        
+        if ([objTemp saveInBackground]){
+            self.txtDia.text = nil;
+            self.txtHora.text = nil;
+            self.txtMsj.text = nil;
+        }
+        else
+        {
+            NSLog(@"Error Guardar");
+        }
+        alert = [[UIAlertView alloc] initWithTitle:@"!!!Gracias!!!"
+                                           message:@"En el Transcurso del dia, Recibiras tu confirmacion!!!"
+                                          delegate:self
+                                 cancelButtonTitle:@"OK"
+                                 otherButtonTitles: nil];
+        [alert show];
+
+        
+    }
+
+}
 @end

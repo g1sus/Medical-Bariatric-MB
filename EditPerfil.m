@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 
 UIImage *chosenImage;
+UIAlertView *alert;
 
 @interface EditPerfil ()
 
@@ -46,8 +47,6 @@ UIImage *chosenImage;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)btnFoto:(id)sender {
-}
 
 - (IBAction)btnGuardar:(id)sender {
     //Agregar datos en parse desde Editar Perfil
@@ -100,7 +99,12 @@ UIImage *chosenImage;
         {
             NSLog(@"Error Guardar");
         }
-        
+        alert = [[UIAlertView alloc] initWithTitle:@"!!!Gracias!!!"
+                                           message:@"No Olvides Actualizar Tus Datos Casa Semana!!!"
+                                          delegate:self
+                                 cancelButtonTitle:@"OK"
+                                 otherButtonTitles: nil];
+        [alert show];
         
         
        [self performSegueWithIdentifier:@"EditToMenu" sender:self];

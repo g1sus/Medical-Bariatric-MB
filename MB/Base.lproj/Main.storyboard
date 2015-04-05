@@ -271,7 +271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5cR-t8-BLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-932.5" y="1423.5"/>
+            <point key="canvasLocation" x="-932.5" y="1430.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9DO-zS-MfH">
@@ -468,29 +468,37 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1sO-1d-zio">
-                                <rect key="frame" x="16" y="319" width="343" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telefono" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6er-x0-q04">
-                                <rect key="frame" x="16" y="369" width="343" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mensaje" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nby-XJ-gzn">
-                                <rect key="frame" x="16" y="419" width="343" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZl-7y-mnS">
-                                <rect key="frame" x="16" y="492" width="343" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
-                                <state key="normal" title="Enviar ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="eyy-0a-ub3">
+                                <rect key="frame" x="16" y="157" width="343" height="385"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hora Posible de Consulta         24:00" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1sO-1d-zio">
+                                        <rect key="frame" x="0.0" y="100" width="343" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dia Posible de Consulta" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6er-x0-q04">
+                                        <rect key="frame" x="0.0" y="150" width="343" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZl-7y-mnS">
+                                        <rect key="frame" x="0.0" y="280" width="343" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                        <state key="normal" title="Enviar ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="btnSave:" destination="bca-W5-Cov" eventType="touchUpInside" id="8mU-qT-THO"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mensaje" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nby-XJ-gzn">
+                                        <rect key="frame" x="0.0" y="200" width="343" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -502,6 +510,10 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="btnMenu" destination="2Op-84-wo0" id="Tve-kN-NQz"/>
+                        <outlet property="txtDia" destination="6er-x0-q04" id="1dp-Ag-t7d"/>
+                        <outlet property="txtHora" destination="1sO-1d-zio" id="O19-kd-0NN"/>
+                        <outlet property="txtMsj" destination="nby-XJ-gzn" id="ybk-HJ-whL"/>
+                        <segue destination="XQ6-tr-yjd" kind="modal" identifier="AgendaToMenu" modalTransitionStyle="crossDissolve" id="UDf-IP-BYA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYS-6h-KR4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -993,6 +1005,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sl0-CB-J7k"/>
-        <segue reference="P4A-by-r0F"/>
+        <segue reference="UDf-IP-BYA"/>
     </inferredMetricsTieBreakers>
 </document>
