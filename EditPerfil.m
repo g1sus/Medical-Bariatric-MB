@@ -8,6 +8,7 @@
 
 #import "EditPerfil.h"
 #import <Parse/Parse.h>
+#import "VariablesGlobales.h"
 
 UIImage *chosenImage;
 UIAlertView *alert;
@@ -84,9 +85,13 @@ UIAlertView *alert;
         objTemp[@"imgPicture"] = imageFile;
         
         
-        
+        idParseObj = @"";
         
         if ([objTemp saveInBackground]){
+            
+            //guardar el ID
+            
+            
             self.txtNombre.text = nil;
             self.txtFechaNac.text = nil;
             self.txtPeso.text = nil;
@@ -106,7 +111,9 @@ UIAlertView *alert;
                                  otherButtonTitles: nil];
         [alert show];
         
+        idParseObj = [objTemp objectId];
         
+        NSLog(@"id desde editar %@", idParseObj);
        [self performSegueWithIdentifier:@"EditToMenu" sender:self];
         
     }

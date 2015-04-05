@@ -74,6 +74,7 @@
 		64FCF7FD1AD0C80B00B73F17 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64FCF7101AD0C80A00B73F17 /* FBSDKCoreKit.framework */; };
 		64FCF7FE1AD0C80B00B73F17 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64FCF7111AD0C80A00B73F17 /* FBSDKLoginKit.framework */; };
 		64FCF89A1AD0EB8C00B73F17 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 64FCF8991AD0EB8C00B73F17 /* avatar.png */; };
+		64FCF89E1AD1004E00B73F17 /* VariablesGlobales.m in Sources */ = {isa = PBXBuildFile; fileRef = 64FCF89D1AD1004E00B73F17 /* VariablesGlobales.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,6 +171,8 @@
 		64FCF7101AD0C80A00B73F17 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = FB/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		64FCF7111AD0C80A00B73F17 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FB/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		64FCF8991AD0EB8C00B73F17 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		64FCF89C1AD1004E00B73F17 /* VariablesGlobales.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VariablesGlobales.h; sourceTree = "<group>"; };
+		64FCF89D1AD1004E00B73F17 /* VariablesGlobales.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VariablesGlobales.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +287,7 @@
 		643A1F4D1ACDCE8D0008ACBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				64FCF89B1AD1003400B73F17 /* GlobalVars */,
 				64FCF8981AD0CDA800B73F17 /* FB */,
 				643A1FCD1ACDDBB30008ACBF /* libsqlite3.dylib */,
 				643A1FCB1ACDDBA70008ACBF /* libz.dylib */,
@@ -298,7 +302,8 @@
 				643A1FB91ACDDB470008ACBF /* AudioToolbox.framework */,
 				643A1FAC1ACDD4C60008ACBF /* parse-library-1.7.1 */,
 			);
-			path = Frameworks;
+			name = Frameworks;
+			path = ../Frameworks;
 			sourceTree = "<group>";
 		};
 		643A1FAC1ACDD4C60008ACBF /* parse-library-1.7.1 */ = {
@@ -317,7 +322,6 @@
 		645D477E1ACB6F650069F0C1 = {
 			isa = PBXGroup;
 			children = (
-				643A1F4D1ACDCE8D0008ACBF /* Frameworks */,
 				645D47B31ACB70FF0069F0C1 /* Imgs */,
 				645D47891ACB6F650069F0C1 /* MB */,
 				645D47A61ACB6F650069F0C1 /* MBTests */,
@@ -337,8 +341,9 @@
 		645D47891ACB6F650069F0C1 /* MB */ = {
 			isa = PBXGroup;
 			children = (
-				645D478E1ACB6F650069F0C1 /* AppDelegate.h */,
+				643A1F4D1ACDCE8D0008ACBF /* Frameworks */,
 				645D478F1ACB6F650069F0C1 /* AppDelegate.m */,
+				645D478E1ACB6F650069F0C1 /* AppDelegate.h */,
 				645D47941ACB6F650069F0C1 /* ViewController.h */,
 				645D47951ACB6F650069F0C1 /* ViewController.m */,
 				645D47971ACB6F650069F0C1 /* Main.storyboard */,
@@ -449,6 +454,15 @@
 				64FCF7111AD0C80A00B73F17 /* FBSDKLoginKit.framework */,
 			);
 			name = FB;
+			sourceTree = "<group>";
+		};
+		64FCF89B1AD1003400B73F17 /* GlobalVars */ = {
+			isa = PBXGroup;
+			children = (
+				64FCF89C1AD1004E00B73F17 /* VariablesGlobales.h */,
+				64FCF89D1AD1004E00B73F17 /* VariablesGlobales.m */,
+			);
+			name = GlobalVars;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -589,6 +603,7 @@
 				64E666161ACC35EE00452C66 /* Home.m in Sources */,
 				643A1F421ACDB1B20008ACBF /* ConoceDra.m in Sources */,
 				64E666311ACD0AD300452C66 /* Sesion.m in Sources */,
+				64FCF89E1AD1004E00B73F17 /* VariablesGlobales.m in Sources */,
 				64E666131ACC34DE00452C66 /* SWRevealViewController.m in Sources */,
 				645D47961ACB6F650069F0C1 /* ViewController.m in Sources */,
 				643A1F3C1ACDAA760008ACBF /* Historial.m in Sources */,

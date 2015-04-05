@@ -12,6 +12,16 @@
 
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *btnMenu;
 
+//Action
 - (IBAction)btnEdit:(id)sender;
+
+//Labels
+@property (strong, nonatomic) IBOutlet UITextField *lblNombre;
+@property (strong, nonatomic) IBOutlet UIImageView *lblImgPicture;
+@property (strong, nonatomic) IBOutlet UILabel *lblEstatura;
+@property (strong, nonatomic) IBOutlet UILabel *lblPeso;
+@property (strong, nonatomic) IBOutlet UILabel *lblPesoIdeal;
+@property (strong, nonatomic) IBOutlet UILabel *lblIMC;
+
 
 @end

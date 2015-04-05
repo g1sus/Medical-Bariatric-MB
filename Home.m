@@ -8,6 +8,8 @@
 
 #import "Home.h"
 #import "SWRevealViewController.h"
+#import "VariablesGlobales.h"
+#import <Parse/Parse.h>
 
 
 @interface Home ()
@@ -20,6 +22,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
+    
     SWRevealViewController *revealViewController = self.revealViewController;
     if ( revealViewController )
     {
@@ -27,6 +31,31 @@
         [self.btnMenu setAction: @selector( revealToggle: )];
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
+    
+
+    
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"MedicalBariatric"];
+    [query getFirstObjectInBackgroundWithBlock:^(PFObject *persona, NSError *error) {
+        // code
+        
+        NSNumber *estatura = [persona objectForKey:@"Estatura"];
+        NSNumber *peso = [persona objectForKey:@"Peso"];
+        NSNumber *pi = [persona objectForKey:@"PesoIdeal"];
+        NSNumber *imc = [persona objectForKey:@"IMC"];
+        
+        
+        self.lblNombre.text = persona[@"Nombre"];
+        self.lblEstatura.text = [estatura stringValue];
+        self.lblPeso.text = [peso stringValue];
+        self.lblPesoIdeal.text = [pi stringValue];
+        self.lblIMC.text = [imc stringValue];
+    }];
+    
+    
+    
+    
+    
 }
 
 
