@@ -55,6 +55,7 @@
 		6493F3341ACD883700A975A2 /* Media2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6493F3331ACD883700A975A2 /* Media2.xcassets */; };
 		6493F3371ACD8C3000A975A2 /* LauchMB.png in Resources */ = {isa = PBXBuildFile; fileRef = 6493F3351ACD8C3000A975A2 /* LauchMB.png */; };
 		6493F3381ACD8C3000A975A2 /* LogoMB.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6493F3361ACD8C3000A975A2 /* LogoMB.jpg */; };
+		64C343E11AD3552000DDBA05 /* CellHistorial.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C343E01AD3552000DDBA05 /* CellHistorial.m */; };
 		64E666131ACC34DE00452C66 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E666121ACC34DE00452C66 /* SWRevealViewController.m */; };
 		64E666161ACC35EE00452C66 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E666151ACC35EE00452C66 /* Home.m */; };
 		64E6661A1ACC368700452C66 /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = 64E666191ACC368700452C66 /* Menu.m */; };
@@ -145,6 +146,8 @@
 		6493F3331ACD883700A975A2 /* Media2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media2.xcassets; path = ../Media2.xcassets; sourceTree = "<group>"; };
 		6493F3351ACD8C3000A975A2 /* LauchMB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LauchMB.png; sourceTree = "<group>"; };
 		6493F3361ACD8C3000A975A2 /* LogoMB.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LogoMB.jpg; sourceTree = "<group>"; };
+		64C343DF1AD3552000DDBA05 /* CellHistorial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellHistorial.h; sourceTree = "<group>"; };
+		64C343E01AD3552000DDBA05 /* CellHistorial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellHistorial.m; sourceTree = "<group>"; };
 		64E666111ACC34DE00452C66 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		64E666121ACC34DE00452C66 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		64E666141ACC35EE00452C66 /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
@@ -225,6 +228,8 @@
 		643A1F441ACDBBA50008ACBF /* Historial */ = {
 			isa = PBXGroup;
 			children = (
+				64C343DF1AD3552000DDBA05 /* CellHistorial.h */,
+				64C343E01AD3552000DDBA05 /* CellHistorial.m */,
 				643A1F3A1ACDAA760008ACBF /* Historial.h */,
 				643A1F3B1ACDAA760008ACBF /* Historial.m */,
 			);
@@ -343,6 +348,7 @@
 			children = (
 				643A1F4D1ACDCE8D0008ACBF /* Frameworks */,
 				645D478F1ACB6F650069F0C1 /* AppDelegate.m */,
+				64E666171ACC366E00452C66 /* Sesion */,
 				645D478E1ACB6F650069F0C1 /* AppDelegate.h */,
 				645D47941ACB6F650069F0C1 /* ViewController.h */,
 				645D47951ACB6F650069F0C1 /* ViewController.m */,
@@ -352,7 +358,6 @@
 				645D479C1ACB6F650069F0C1 /* LaunchScreen.xib */,
 				645D47911ACB6F650069F0C1 /* MB.xcdatamodeld */,
 				643A1F491ACDBBFC0008ACBF /* Menu */,
-				64E666171ACC366E00452C66 /* Sesion */,
 				643A1F461ACDBBAA0008ACBF /* Conoce Dra */,
 				643A1F481ACDBBF60008ACBF /* Perfil Home */,
 				643A1F441ACDBBA50008ACBF /* Historial */,
@@ -605,6 +610,7 @@
 				64E666311ACD0AD300452C66 /* Sesion.m in Sources */,
 				64FCF89E1AD1004E00B73F17 /* VariablesGlobales.m in Sources */,
 				64E666131ACC34DE00452C66 /* SWRevealViewController.m in Sources */,
+				64C343E11AD3552000DDBA05 /* CellHistorial.m in Sources */,
 				645D47961ACB6F650069F0C1 /* ViewController.m in Sources */,
 				643A1F3C1ACDAA760008ACBF /* Historial.m in Sources */,
 				645D478D1ACB6F650069F0C1 /* main.m in Sources */,

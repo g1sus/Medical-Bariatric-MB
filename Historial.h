@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <parseUI/PFQueryTableViewController.h>
+#import <Parse/Parse.h>
 
-@interface Historial : UITableViewController
+
+@interface Historial : PFQueryTableViewController
+
+
+
+
+
 
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *btnMenu;
 @end

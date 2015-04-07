@@ -105,7 +105,7 @@ UIAlertView *alert;
             NSLog(@"Error Guardar");
         }
         alert = [[UIAlertView alloc] initWithTitle:@"!!!Gracias!!!"
-                                           message:@"No Olvides Actualizar Tus Datos Casa Semana!!!"
+                                           message:@"No Olvides Actualizar Tus Datos Cada Semana!!!"
                                           delegate:self
                                  cancelButtonTitle:@"OK"
                                  otherButtonTitles: nil];
